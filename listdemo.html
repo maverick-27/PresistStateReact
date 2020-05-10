@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles002.css" />
+  </head>
+
+  <body>
+    <button class="button2" onclick="React()">React</button>
+    <br />
+    <button class="button2" onclick="Angular()">Angular</button>
+    <br />
+    <button class="button2" onclick="JavaScript()">Java Script</button>
+    <br />
+    <button class="button2" onclick="ResetText()">Reset Text</button>
+    <br />
+    <div class="txt2" id="textmsg"></div>
+    <br />
+  </body>
+  <script>
+    function React() {
+      var ele = document.getElementById("textmsg");
+      ele.innerHTML = "React is framework Developed by Fcaebook";
+    }
+
+    function Angular() {
+      var ele = document.getElementById("textmsg");
+      ele.innerHTML = "Angular is supported by Google";
+    }
+    function JavaScript() {
+      var ele = document.getElementById("textmsg");
+      ele.innerHTML = "JavaScript is at the center of all web apps";
+    }
+    function ResetText() {
+      var ele = document.getElementById("textmsg");
+      ele.innerHTML = "";
+    }
+  </script>
+</html>
